@@ -1,0 +1,19 @@
+{{template "admin" .}}
+
+{{define "page-title"}}
+    PRODUCT CATEGORY
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                {{$count := index .IntMap "count"}}
+                <table class="table table-sm table-dark">
+                    {{$count}}
+                </table>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+{{end}}
